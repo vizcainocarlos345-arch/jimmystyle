@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>JimmyStyle 💈</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0f0f0f;
+    color:white;
+}
+
+/* HEADER */
+
+header{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.85)),
+    url('https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?q=80&w=1400&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero{
+    max-width:850px;
+}
+
+.logo{
+    font-size:75px;
+    font-weight:700;
+    color:#d4af37;
+    margin-bottom:20px;
+    text-shadow:0 0 25px rgba(212,175,55,.3);
+}
+
+.hero p{
+    color:#ddd;
+    line-height:1.7;
+    font-size:20px;
+    margin-bottom:35px;
+}
+
+.hero a{
+    display:inline-block;
+    padding:16px 35px;
+    background:#d4af37;
+    color:black;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.hero a:hover{
+    transform:scale(1.05);
+}
+
+/* INFO */
+
+.info{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding:60px 10%;
+}
+
+.box{
+    background:#1b1b1b;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.box h2{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+/* SERVICIOS */
+
+.services{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:#d4af37;
+    font-size:42px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#1b1b1b;
+    padding:30px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+.price{
+    margin-top:20px;
+    font-size:28px;
+    font-weight:bold;
+}
+
+/* FORMULARIO */
+
+.booking{
+    padding:80px 10%;
+}
+
+.form-box{
+    background:#1b1b1b;
+    padding:40px;
+    border-radius:25px;
+    max-width:850px;
+    margin:auto;
+}
+
+.form-box h2{
+    text-align:center;
+    color:#d4af37;
+    margin-bottom:35px;
+}
+
+.input-group{
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:500;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#222;
+    color:white;
+    font-size:16px;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline:2px solid #d4af37;
+}
+
+button{
+    width:100%;
+    padding:18px;
+    border:none;
+    background:#d4af37;
+    color:black;
+    font-size:18px;
+    font-weight:bold;
+    border-radius:15px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.02);
+}
+
+/* QR */
+
+.qr-box{
+    display:none;
+    text-align:center;
+    margin-top:20px;
+}
+
+.qr-box img{
+    width:280px;
+    max-width:100%;
+    border-radius:20px;
+}
+
+/* FOOTER */
+
+footer{
+    padding:40px;
+    background:#000;
+    text-align:center;
+    color:#888;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:65px;
+    height:65px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:35px;
+    text-decoration:none;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .logo{
+        font-size:45px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="hero">
+
+<div class="logo">
+JimmyStyle 💈
+</div>
+
+<p>
+Reserva tu turno premium fácilmente.
+Atención profesional, cortes modernos y servicio de calidad.
+</p>
+
+<a href="#booking">
+Reservar Ahora
+</a>
+
+</div>
+
+</header>
+
+<section class="info">
+
+<div class="box">
+<h2>📍 Dirección</h2>
+<p>Villa del Carmen - Cancha pequeña</p>
+</div>
+
+<div class="box">
+<h2>🕒 Horario</h2>
+<p>
+Martes a Domingo<br>
+7:00 AM - 8:00 PM
+</p>
+</div>
+
+<div class="box">
+<h2>⏳ Duración</h2>
+<p>40 minutos por servicio</p>
+</div>
+
+</section>
+
+<section class="services">
+
+<div class="section-title">
+<h2>Servicios</h2>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Corte de Niño</h3>
+<p>Corte moderno para niños.</p>
+<div class="price">$20.000</div>
+</div>
+
+<div class="card">
+<h3>Corte Normal</h3>
+<p>Corte clásico y sencillo.</p>
+<div class="price">$15.000</div>
+</div>
+
+<div class="card">
+<h3>Corte con Mascarilla</h3>
+<p>Incluye cuidado facial.</p>
+<div class="price">$20.000</div>
+</div>
+
+<div class="card">
+<h3>Corte + Barba</h3>
+<p>Look completo premium.</p>
+<div class="price">$20.000</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="booking" id="booking">
+
+<div class="form-box">
+
+<h2>Agenda tu cita</h2>
+
+<form id="bookingForm">
+
+<div class="input-group">
+<label>Nombre completo</label>
+<input type="text" id="name" required>
+</div>
+
+<div class="input-group">
+<label>WhatsApp</label>
+<input type="tel" id="phone" required>
+</div>
+
+<div class="input-group">
+<label>Servicio</label>
+
+<select id="service" required>
+<option value="">Selecciona</option>
+<option>Corte de Niño - $20.000</option>
+<option>Corte Normal - $15.000</option>
+<option>Corte con Mascarilla - $20.000</option>
+<option>Corte + Barba - $20.000</option>
+</select>
+
+</div>
+
+<div class="input-group">
+<label>Fecha</label>
+<input type="date" id="date" required>
+</div>
+
+<div class="input-group">
+<label>Hora</label>
+
+<select id="time" required>
+<option value="">Selecciona</option>
+</select>
+
+</div>
+
+<div class="input-group">
+<label>Método de pago</label>
+
+<select id="payment" required>
+<option value="">Selecciona</option>
+<option>Efectivo</option>
+<option>Transferencia</option>
+</select>
+
+</div>
+
+<div class="qr-box" id="qrBox">
+
+<h3 style="margin-bottom:15px;color:#d4af37;">
+Escanea y envía la captura al WhatsApp
+</h3>
+
+<img src="6795c7d2-1af0-4692-8083-14398ab934ed.jpeg">
+
+</div>
+
+<div class="input-group">
+<label>Notas adicionales</label>
+<textarea id="notes" rows="4"></textarea>
+</div>
+
+<button type="submit">
+Confirmar Reserva
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 JimmyStyle 💈 — Todos los derechos reservados
+
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/573044476991"
+target="_blank">
+💬
+</a>
+
+<script>
+
+const form = document.getElementById("bookingForm");
+const payment = document.getElementById("payment");
+const qrBox = document.getElementById("qrBox");
+const dateInput = document.getElementById("date");
+const timeSelect = document.getElementById("time");
+
+/* HORARIOS */
+
+const schedules = [
+"07:00","07:40","08:20","09:00","09:40",
+"10:20","11:00","11:40","12:20","13:00",
+"13:40","14:20","15:00","15:40","16:20",
+"17:00","17:40","18:20","19:00","19:40"
+];
+
+/* GENERAR HORAS */
+
+function loadTimes(){
+
+    timeSelect.innerHTML = '<option value="">Selecciona</option>';
+
+    schedules.forEach(time=>{
+
+        const option = document.createElement("option");
+        option.value = time;
+        option.textContent = time;
+
+        timeSelect.appendChild(option);
+
+    });
+
+}
+
+loadTimes();
+
+/* FECHA MINIMA */
+
+const today = new Date().toISOString().split("T")[0];
+dateInput.setAttribute("min", today);
+
+/* BLOQUEAR LUNES */
+
+dateInput.addEventListener("input", ()=>{
+
+    const selected = new Date(dateInput.value);
+
+    if(selected.getDay() === 1){
+
+        alert("Los lunes no hay atención.");
+
+        dateInput.value = "";
+
+    }
+
+});
+
+/* MOSTRAR QR */
+
+payment.addEventListener("change", ()=>{
+
+    if(payment.value === "Transferencia"){
+
+        qrBox.style.display = "block";
+
+    }else{
+
+        qrBox.style.display = "none";
+
+    }
+
+});
+
+/* STORAGE */
+
+let appointments = JSON.parse(localStorage.getItem("appointments")) || [];
+
+/* BLOQUEAR HORAS OCUPADAS */
+
+dateInput.addEventListener("change", ()=>{
+
+    loadTimes();
+
+    const selectedDate = dateInput.value;
+
+    appointments.forEach(app=>{
+
+        if(app.date === selectedDate){
+
+            [...timeSelect.options].forEach(option=>{
+
+                if(option.value === app.time){
+
+                    option.disabled = true;
+                    option.textContent += " (Ocupado)";
+
+                }
+
+            });
+
+        }
+
+    });
+
+});
+
+/* RESERVAR */
+
+form.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const service = document.getElementById("service").value;
+    const date = dateInput.value;
+    const time = timeSelect.value;
+    const notes = document.getElementById("notes").value;
+    const paymentMethod = payment.value;
+
+    const now = new Date();
+    const selectedDateTime = new Date(date + "T" + time);
+
+    if(selectedDateTime < now){
+
+        alert("No puedes reservar horarios pasados.");
+
+        return;
+
+    }
+
+    const exists = appointments.find(app =>
+        app.date === date &&
+        app.time === time
+    );
+
+    if(exists){
+
+        alert("Ese horario ya fue reservado.");
+
+        return;
+
+    }
+
+    appointments.push({
+        name,
+        phone,
+        service,
+        date,
+        time
+    });
+
+    localStorage.setItem(
+        "appointments",
+        JSON.stringify(appointments)
+    );
+
+    let paymentText = paymentMethod;
+
+    if(paymentMethod === "Transferencia"){
+
+        paymentText += " (Enviar captura del pago al WhatsApp)";
+
+    }
+
+    const message =
+`✂️ *NUEVA RESERVA - JIMMYSTYLE* %0A%0A
+👤 Cliente: ${name}%0A
+📱 WhatsApp: ${phone}%0A
+💈 Servicio: ${service}%0A
+📅 Fecha: ${date}%0A
+⏰ Hora: ${time}%0A
+💳 Pago: ${paymentText}%0A
+📍 Dirección: Villa del Carmen - Cancha pequeña%0A%0A
+✅ Tu turno fue reservado correctamente.%0A
+⏳ Puedes acercarte a la barbería a la hora seleccionada.%0A%0A
+📝 Notas: ${notes}`;
+
+    window.open(
+`https://wa.me/573044476991?text=${message}`,
+"_blank"
+    );
+
+    alert("Reserva realizada correctamente.");
+
+    form.reset();
+
+    qrBox.style.display = "none";
+
+    loadTimes();
+
+});
+
+</script>
+
+</body>
+</html>
